@@ -36,6 +36,6 @@ jobs:
           pip3 install sklearn
           pip3 install torch
           pip3 install matplotlib
-          python model.py -e 140 
+          python model.py -e 140 --save
           python evaluate.py
           cml-send-comment logs.md
